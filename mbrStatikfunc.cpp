@@ -12,8 +12,12 @@ public:
     void setID();
     void printAll();
 
-    static void setNim(int pnim) { nim = pnim; /*Definisi Function*/ }
-    static int getNim() { return nim;  /*Definisi Function*/ }
+    static void setNim(int pnim) { nim = pnim;}
+    static int getNim() { return nim; }
 
-    mahasiswa(string pnama) :nama(pnama) { setID(); }
+    mahasiswa(string pnama) 
+    {
+        nama = pnama;
+        setID();
+    }
 };
